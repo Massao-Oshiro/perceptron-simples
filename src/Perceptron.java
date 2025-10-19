@@ -63,4 +63,12 @@ public class Perceptron {
         soma += bias;
         return ativacao(soma);
     }
+
+    public void mostrarPesosBias() {
+        System.out.print("Pesos:" + " ");
+        for (int i = 0; i < pesos.length; i++) {
+            System.out.print(pesos[i] + " ");
+        }
+        System.out.println("\nBias: " + bias);
+    }
 }
